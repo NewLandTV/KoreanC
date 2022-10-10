@@ -1,0 +1,194 @@
+#ifndef __한글_h__
+#define __한글_h__
+
+#include <iostream>
+#include <Windows.h>
+
+// 표준 입출력
+#define 입력 std::cin >>
+#define 출력 std::cout <<
+
+// 이스케이프 시퀀스
+#define 경고음 "\a"
+#define 줄바꿈 "\n"
+#define 수평탭 "\t"
+#define 수직탭 "\v"
+#define 백스페이스 "\b"
+#define 폼피드 "\f"
+#define 캐리지리턴 "\r"
+
+// 구문
+#define 만약 if
+#define 반복 for
+#define 동안 while
+#define 반환 return
+
+// 연산자
+#define 더하기 +
+#define 빼기 -
+#define 곱하기 *
+#define 나누기 /
+#define 나머지 %
+#define 아니면 ||
+#define 그리고 &&
+#define 같음 ==
+#define 다름 !=
+#define 보다큰 <
+#define 보다작은 >
+#define 보다크거나같음 <=
+#define 보다작거나같음 >=
+#define 반대 !
+#define 비트아니면 |
+#define 비트그리고 &
+#define 비트반대 ~
+#define 비트베타적논리합 ^
+#define 비트왼쪽시프트 <<
+#define 비트오른쪽시프트 >>
+#define 대입 =
+#define 주소 &
+#define 포인터 *
+#define 증감 ++
+#define 감소 --
+#define 더하기대입 +=
+#define 빼기대입 -=
+#define 곱하기대입 *=
+#define 나누기대입 /=
+#define 나머지대입 %=
+#define 플러스 +
+#define 마이너스 -
+#define 양수 +
+#define 음수 -
+
+#define 물음표 ?
+#define 콜론 :
+#define 세미콜론 ;
+#define 콤마
+#define 과 ,
+#define 와 ,
+#define 점 .
+#define 멤버 .
+#define 안에 .
+
+// 괄호 종류
+#define 괄호열기 (
+#define 괄호닫기 )
+#define 괄호열기닫기 ()
+#define 중괄호열기 {
+#define 중괄호닫기 }
+#define 중괄호열기닫기 {}
+#define 대괄호열기 [
+#define 대괄호닫기 ]
+#define 대괄호열기닫기 []
+
+// 메인 함수
+#define 진입점 main
+
+// 참과 거짓
+#define 참 true
+#define 거짓 false
+
+#define 상수 const
+
+// 숫자
+#define 소수32 0.00000000000000000000000000000001
+#define 소수31 0.0000000000000000000000000000001
+#define 소수30 0.000000000000000000000000000001
+#define 소수29 0.00000000000000000000000000001
+#define 소수28 0.0000000000000000000000000001
+#define 소수27 0.000000000000000000000000001
+#define 소수26 0.00000000000000000000000001
+#define 소수25 0.0000000000000000000000001
+#define 소수24 0.000000000000000000000001
+#define 소수23 0.00000000000000000000001
+#define 소수22 0.0000000000000000000001
+#define 소수21 0.000000000000000000001
+#define 소수20 0.00000000000000000001
+#define 소수19 0.0000000000000000001
+#define 소수18 0.000000000000000001
+#define 소수17 0.00000000000000001
+#define 소수16 0.0000000000000001
+#define 소수15 0.000000000000001
+#define 소수14 0.00000000000001
+#define 소수13 0.0000000000001
+#define 소수12 0.000000000001
+#define 소수11 0.00000000001
+#define 소수10 0.0000000001
+#define 소수9 0.000000001
+#define 소수8 0.00000001
+#define 소수7 0.0000001
+#define 소수6 0.000001
+#define 소수5 0.00001
+#define 소수4 0.0001
+#define 소수3 0.001
+#define 소수2 0.01
+#define 소수1 0.1
+#define 영 0
+#define 공 0
+#define 일 1
+#define 하나 1
+#define 이 2
+#define 둘 2
+#define 삼 3
+#define 셋 3
+#define 사 4
+#define 넷 4
+#define 오 5
+#define 다섯 5
+#define 육 6
+#define 여섯 6
+#define 칠 7
+#define 일곱 7
+#define 팔 8
+#define 여덟 8
+#define 구 9
+#define 아홉 9
+#define 십 10
+#define 열 10
+#define 백 100
+#define 천 1000
+#define 만 10000
+#define 일만 10000
+#define 십만 100000
+#define 백만 1000000
+#define 천만 10000000
+#define 억 100000000
+#define 일억 100000000
+#define 십억 1000000000
+#define 백억 10000000000
+#define 천억 100000000000
+#define 조 1000000000000
+#define 일조 1000000000000
+#define 십조 10000000000000
+#define 백조 100000000000000
+#define 천조 1000000000000000
+#define 경 10000000000000000
+#define 일경 10000000000000000
+#define 십경 100000000000000000
+#define 백경 1000000000000000000
+#define 천경 10000000000000000000
+#define 해 100000000000000000000
+#define 일해 100000000000000000000
+#define 십해 1000000000000000000000
+#define 백해 10000000000000000000000
+#define 천해 100000000000000000000000
+#define 양 1000000000000000000000000
+#define 일양 1000000000000000000000000
+#define 십양 10000000000000000000000000
+#define 백양 100000000000000000000000000
+#define 천양 1000000000000000000000000000
+
+// 자료형
+typedef void 빈;
+typedef short 정수16;
+typedef unsigned short 부호없는정수16;
+typedef int 정수32;
+typedef unsigned int 부호없는정수32;
+typedef long long 정수64;
+typedef unsigned long long 부호없는정수64;
+typedef bool 불;
+typedef float 실수;
+typedef double 정밀실수;
+typedef char 문자;
+typedef unsigned char 부호없는문자;
+
+#endif
