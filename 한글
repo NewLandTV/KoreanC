@@ -1,194 +1,259 @@
-#ifndef __í•œê¸€_h__
-#define __í•œê¸€_h__
+#ifndef __ÇÑ±Û_¹®¹ı__
+#define __ÇÑ±Û_¹®¹ı__
 
+// ±âº» ÇÑ±Û ¹®¹ı °ü·Ã
 #include <iostream>
+
+// Ç¥ÁØ ÀÔÃâ·Â
+#define ÀÔ·Â std::cin >>
+#define Ãâ·Â std::cout <<
+#define ¼­½ÄÀÔ·Â scanf
+#define ¼­½ÄÃâ·Â printf
+
+// ÀÌ½ºÄÉÀÌÇÁ ½ÃÄö½º
+#define °æ°íÀ½ "\a"
+#define ÁÙ¹Ù²Ş "\n"
+#define ¼öÆòÅÇ "\t"
+#define ¼öÁ÷ÅÇ "\v"
+#define ¹é½ºÆäÀÌ½º "\b"
+#define ÆûÇÇµå "\f"
+#define Ä³¸®Áö¸®ÅÏ "\r"
+
+// ±¸¹®°ú Å°¿öµå
+#define ¸¸¾à if
+#define ¹İº¹ for
+#define ÇÑ´Ù do
+#define µ¿¾È while
+#define ¼±ÅÃ switch
+#define Áß´Ü break
+#define °è¼Ó continue
+#define ¼±ÅÃÀÚ case
+#define ±âº» default
+#define ¹İÈ¯ return
+#define °¡±â goto
+
+#define »õ·Î¿î new
+#define Á¦°Å delete
+#define ±¸Á¶Ã¼ struct
+#define °ø¿ëÃ¼ union
+#define Å¬·¡½º class
+#define ÀÚ·áÁ¤ÀÇ typedef
+#define Ä¡¼ö±¸ÇÏ±â sizeof
+
+// Çüº¯È¯ °ü·Ã
+#define µ¿Àû_º¯È­ dynamic_cast
+#define Á¤Àû_º¯È­ static_cast
+#define »ó¼ö_º¯È­ const_cast
+#define Æ÷ÀÎÅÍ_º¯È­ reinterpret_cast
+
+// ¿¬»êÀÚ
+#define ´õÇÏ±â +
+#define »©±â -
+#define °öÇÏ±â *
+#define ³ª´©±â /
+#define ³ª¸ÓÁö %
+#define ¾Æ´Ï¸é ||
+#define ±×¸®°í &&
+#define °°À½ ==
+#define ´Ù¸§ !=
+#define º¸´ÙÅ« <
+#define º¸´ÙÀÛÀº >
+#define º¸´ÙÅ©°Å³ª°°À½ <=
+#define º¸´ÙÀÛ°Å³ª°°À½ >=
+#define ¹İ´ë !
+#define ºñÆ®¾Æ´Ï¸é |
+#define ºñÆ®±×¸®°í &
+#define ºñÆ®¹İ´ë ~
+#define ºñÆ®º£Å¸Àû³í¸®ÇÕ ^
+#define ºñÆ®¿ŞÂÊ½ÃÇÁÆ® <<
+#define ºñÆ®¿À¸¥ÂÊ½ÃÇÁÆ® >>
+#define ´ëÀÔ =
+#define ÁÖ¼Ò &
+#define Æ÷ÀÎÅÍ *
+#define Áõ°¨ ++
+#define °¨¼Ò --
+#define ´õÇÏ±â´ëÀÔ +=
+#define »©±â´ëÀÔ -=
+#define °öÇÏ±â´ëÀÔ *=
+#define ³ª´©±â´ëÀÔ /=
+#define ³ª¸ÓÁö´ëÀÔ %=
+#define ÇÃ·¯½º +
+#define ¸¶ÀÌ³Ê½º -
+#define ¾ç¼ö +
+#define À½¼ö -
+
+#define ¹°À½Ç¥ ?
+#define ½ÖÁ¡ :
+#define ½Ö¹İÁ¡ ;
+#define ÄŞ¸¶
+#define °ú ,
+#define ¿Í ,
+#define Á¡ .
+#define ¸â¹ö .
+#define ¾È¿¡ .
+
+// °ıÈ£ Á¾·ù
+#define °ıÈ£¿­±â (
+#define °ıÈ£´İ±â )
+#define °ıÈ£¿­°í´İ±â ()
+#define Áß°ıÈ£¿­±â {
+#define Áß°ıÈ£´İ±â }
+#define Áß°ıÈ£¿­°í´İ±â {}
+#define ´ë°ıÈ£¿­±â [
+#define ´ë°ıÈ£´İ±â ]
+#define ´ë°ıÈ£¿­°í´İ±â []
+#define È¬È­»ì°ıÈ£¿­±â <
+#define È¬È­»ì°ıÈ£´İ±â >
+#define È¬È­»ì°ıÈ£¿­°í´İ±â <>
+
+// ¸ŞÀÎ ÇÔ¼ö
+#define ÁøÀÔÁ¡ main
+
+// Âü°ú °ÅÁş
+#define Âü true
+#define °ÅÁş false
+
+#define »ó¼ö const
+#define Á¤Àû static
+
+// C malloc & free
+#define µ¿Àû¸Ş¸ğ¸®ÇÒ´ç malloc
+#define µ¿Àû¸Ş¸ğ¸®¹İÈ¯ free
+
+// ¼ıÀÚ
+#define ¼Ò¼ö32 0.00000000000000000000000000000001
+#define ¼Ò¼ö31 0.0000000000000000000000000000001
+#define ¼Ò¼ö30 0.000000000000000000000000000001
+#define ¼Ò¼ö29 0.00000000000000000000000000001
+#define ¼Ò¼ö28 0.0000000000000000000000000001
+#define ¼Ò¼ö27 0.000000000000000000000000001
+#define ¼Ò¼ö26 0.00000000000000000000000001
+#define ¼Ò¼ö25 0.0000000000000000000000001
+#define ¼Ò¼ö24 0.000000000000000000000001
+#define ¼Ò¼ö23 0.00000000000000000000001
+#define ¼Ò¼ö22 0.0000000000000000000001
+#define ¼Ò¼ö21 0.000000000000000000001
+#define ¼Ò¼ö20 0.00000000000000000001
+#define ¼Ò¼ö19 0.0000000000000000001
+#define ¼Ò¼ö18 0.000000000000000001
+#define ¼Ò¼ö17 0.00000000000000001
+#define ¼Ò¼ö16 0.0000000000000001
+#define ¼Ò¼ö15 0.000000000000001
+#define ¼Ò¼ö14 0.00000000000001
+#define ¼Ò¼ö13 0.0000000000001
+#define ¼Ò¼ö12 0.000000000001
+#define ¼Ò¼ö11 0.00000000001
+#define ¼Ò¼ö10 0.0000000001
+#define ¼Ò¼ö9 0.000000001
+#define ¼Ò¼ö8 0.00000001
+#define ¼Ò¼ö7 0.0000001
+#define ¼Ò¼ö6 0.000001
+#define ¼Ò¼ö5 0.00001
+#define ¼Ò¼ö4 0.0001
+#define ¼Ò¼ö3 0.001
+#define ¼Ò¼ö2 0.01
+#define ¼Ò¼ö1 0.1
+#define ¿µ 0
+#define °ø 0
+#define ÀÏ 1
+#define ÇÏ³ª 1
+#define ÀÌ 2
+#define µÑ 2
+#define »ï 3
+#define ¼Â 3
+#define »ç 4
+#define ³İ 4
+#define ¿À 5
+#define ´Ù¼¸ 5
+#define À° 6
+#define ¿©¼¸ 6
+#define Ä¥ 7
+#define ÀÏ°ö 7
+#define ÆÈ 8
+#define ¿©´ü 8
+#define ±¸ 9
+#define ¾ÆÈ© 9
+#define ½Ê 10
+#define ¿­ 10
+#define ¹é 100
+#define Ãµ 1000
+#define ¸¸ 10000
+#define ÀÏ¸¸ 10000
+#define ½Ê¸¸ 100000
+#define ¹é¸¸ 1000000
+#define Ãµ¸¸ 10000000
+#define ¾ï 100000000
+#define ÀÏ¾ï 100000000
+#define ½Ê¾ï 1000000000
+#define ¹é¾ï 10000000000
+#define Ãµ¾ï 100000000000
+#define Á¶ 1000000000000
+#define ÀÏÁ¶ 1000000000000
+#define ½ÊÁ¶ 10000000000000
+#define ¹éÁ¶ 100000000000000
+#define ÃµÁ¶ 1000000000000000
+#define °æ 10000000000000000
+#define ÀÏ°æ 10000000000000000
+#define ½Ê°æ 100000000000000000
+#define ¹é°æ 1000000000000000000
+#define Ãµ°æ 10000000000000000000
+#define ÇØ 100000000000000000000
+#define ÀÏÇØ 100000000000000000000
+#define ½ÊÇØ 1000000000000000000000
+#define ¹éÇØ 10000000000000000000000
+#define ÃµÇØ 100000000000000000000000
+#define ¾ç 1000000000000000000000000
+#define ÀÏ¾ç 1000000000000000000000000
+#define ½Ê¾ç 10000000000000000000000000
+#define ¹é¾ç 100000000000000000000000000
+#define Ãµ¾ç 1000000000000000000000000000
+
+// ÀÚ·áÇü
+typedef void ºó;
+typedef short ÂªÀºÁ¤¼ö;
+typedef unsigned short ºÎÈ£¾ø´ÂÂªÀºÁ¤¼ö;
+typedef int Á¤¼ö;
+typedef unsigned int ºÎÈ£¾ø´ÂÁ¤¼ö;
+typedef long long ±ä±äÁ¤¼ö;
+typedef unsigned long long ºÎÈ£¾ø´Â±ä±äÁ¤¼ö;
+typedef bool ºÒ;
+typedef float ½Ç¼ö;
+typedef double Á¤¹Ğ½Ç¼ö;
+typedef char ¹®ÀÚ;
+typedef unsigned char ºÎÈ£¾ø´Â¹®ÀÚ;
+
+// conio.h °ü·Ã
+#include <conio.h>
+
+#define ´©¸§ÀÚÆÇ´­¸² _kbhit()
+#define ´­¸°ÀÚÆÇ¾ò±â _getch()
+
+// Windows.h °ü·Ã
 #include <Windows.h>
 
-// í‘œì¤€ ì…ì¶œë ¥
-#define ì…ë ¥ std::cin >>
-#define ì¶œë ¥ std::cout <<
+// ÇÔ¼ö¸¦ ÇÑ±Û·Î È£ÃâÇÒ ¼ö ÀÖ°Ô ÀüÃ³¸®±â ÀÛ¾÷
+#define Ãâ·ÂÃ¢ÀÌµ¿¸·´ëÁ¤º¸¼³Á¤ SetConsoleCursorInfo
+#define Ãâ·ÂÃ¢ÀÌµ¿¸·´ëÁÂÇ¥¼³Á¤ SetConsoleCursorPosition
+#define Ãâ·ÂÃ¢È­¸é¹öÆÛÄ¡¼ö SetConsoleScreenBufferSize
+#define Ç¥ÁØ°ü¸®ÀÚ¾ò±â GetStdHandle
+#define Ç¥ÁØ°ü¸®ÀÚ¼³Á¤ SetStdHandle
 
-// ì´ìŠ¤ì¼€ì´í”„ ì‹œí€€ìŠ¤
-#define ê²½ê³ ìŒ "\a"
-#define ì¤„ë°”ê¿ˆ "\n"
-#define ìˆ˜í‰íƒ­ "\t"
-#define ìˆ˜ì§íƒ­ "\v"
-#define ë°±ìŠ¤í˜ì´ìŠ¤ "\b"
-#define í¼í”¼ë“œ "\f"
-#define ìºë¦¬ì§€ë¦¬í„´ "\r"
+// STD_ INPUT OUTPUT ERROR _HANDLE
+#define Ç¥ÁØ_ÀÔ·Â_°ü¸®ÀÚ STD_INPUT_HANDLE
+#define Ç¥ÁØ_Ãâ·Â_°ü¸®ÀÚ STD_OUTPUT_HANDLE
+#define Ç¥ÁØ_¹®Á¦_°ü¸®ÀÚ STD_ERROR_HANDLE
 
-// êµ¬ë¬¸
-#define ë§Œì•½ if
-#define ë°˜ë³µ for
-#define ë™ì•ˆ while
-#define ë°˜í™˜ return
+typedef struct _CONSOLE_CURSOR_INFO Ãâ·ÂÃ¢_ÀÌµ¿¸·´ë_Á¤º¸;
+typedef struct _COORD ÁÂÇ¥;
 
-// ì—°ì‚°ì
-#define ë”í•˜ê¸° +
-#define ë¹¼ê¸° -
-#define ê³±í•˜ê¸° *
-#define ë‚˜ëˆ„ê¸° /
-#define ë‚˜ë¨¸ì§€ %
-#define ì•„ë‹ˆë©´ ||
-#define ê·¸ë¦¬ê³  &&
-#define ê°™ìŒ ==
-#define ë‹¤ë¦„ !=
-#define ë³´ë‹¤í° <
-#define ë³´ë‹¤ì‘ì€ >
-#define ë³´ë‹¤í¬ê±°ë‚˜ê°™ìŒ <=
-#define ë³´ë‹¤ì‘ê±°ë‚˜ê°™ìŒ >=
-#define ë°˜ëŒ€ !
-#define ë¹„íŠ¸ì•„ë‹ˆë©´ |
-#define ë¹„íŠ¸ê·¸ë¦¬ê³  &
-#define ë¹„íŠ¸ë°˜ëŒ€ ~
-#define ë¹„íŠ¸ë² íƒ€ì ë…¼ë¦¬í•© ^
-#define ë¹„íŠ¸ì™¼ìª½ì‹œí”„íŠ¸ <<
-#define ë¹„íŠ¸ì˜¤ë¥¸ìª½ì‹œí”„íŠ¸ >>
-#define ëŒ€ì… =
-#define ì£¼ì†Œ &
-#define í¬ì¸í„° *
-#define ì¦ê° ++
-#define ê°ì†Œ --
-#define ë”í•˜ê¸°ëŒ€ì… +=
-#define ë¹¼ê¸°ëŒ€ì… -=
-#define ê³±í•˜ê¸°ëŒ€ì… *=
-#define ë‚˜ëˆ„ê¸°ëŒ€ì… /=
-#define ë‚˜ë¨¸ì§€ëŒ€ì… %=
-#define í”ŒëŸ¬ìŠ¤ +
-#define ë§ˆì´ë„ˆìŠ¤ -
-#define ì–‘ìˆ˜ +
-#define ìŒìˆ˜ -
+// stdlib.h °ü·Ã
+#include <stdlib.h>
 
-#define ë¬¼ìŒí‘œ ?
-#define ì½œë¡  :
-#define ì„¸ë¯¸ì½œë¡  ;
-#define ì½¤ë§ˆ
-#define ê³¼ ,
-#define ì™€ ,
-#define ì  .
-#define ë©¤ë²„ .
-#define ì•ˆì— .
+#define ½Ã½ºÅÛ system
 
-// ê´„í˜¸ ì¢…ë¥˜
-#define ê´„í˜¸ì—´ê¸° (
-#define ê´„í˜¸ë‹«ê¸° )
-#define ê´„í˜¸ì—´ê¸°ë‹«ê¸° ()
-#define ì¤‘ê´„í˜¸ì—´ê¸° {
-#define ì¤‘ê´„í˜¸ë‹«ê¸° }
-#define ì¤‘ê´„í˜¸ì—´ê¸°ë‹«ê¸° {}
-#define ëŒ€ê´„í˜¸ì—´ê¸° [
-#define ëŒ€ê´„í˜¸ë‹«ê¸° ]
-#define ëŒ€ê´„í˜¸ì—´ê¸°ë‹«ê¸° []
+// time.h °ü·Ã
+#include <time.h>
 
-// ë©”ì¸ í•¨ìˆ˜
-#define ì§„ì…ì  main
-
-// ì°¸ê³¼ ê±°ì§“
-#define ì°¸ true
-#define ê±°ì§“ false
-
-#define ìƒìˆ˜ const
-
-// ìˆ«ì
-#define ì†Œìˆ˜32 0.00000000000000000000000000000001
-#define ì†Œìˆ˜31 0.0000000000000000000000000000001
-#define ì†Œìˆ˜30 0.000000000000000000000000000001
-#define ì†Œìˆ˜29 0.00000000000000000000000000001
-#define ì†Œìˆ˜28 0.0000000000000000000000000001
-#define ì†Œìˆ˜27 0.000000000000000000000000001
-#define ì†Œìˆ˜26 0.00000000000000000000000001
-#define ì†Œìˆ˜25 0.0000000000000000000000001
-#define ì†Œìˆ˜24 0.000000000000000000000001
-#define ì†Œìˆ˜23 0.00000000000000000000001
-#define ì†Œìˆ˜22 0.0000000000000000000001
-#define ì†Œìˆ˜21 0.000000000000000000001
-#define ì†Œìˆ˜20 0.00000000000000000001
-#define ì†Œìˆ˜19 0.0000000000000000001
-#define ì†Œìˆ˜18 0.000000000000000001
-#define ì†Œìˆ˜17 0.00000000000000001
-#define ì†Œìˆ˜16 0.0000000000000001
-#define ì†Œìˆ˜15 0.000000000000001
-#define ì†Œìˆ˜14 0.00000000000001
-#define ì†Œìˆ˜13 0.0000000000001
-#define ì†Œìˆ˜12 0.000000000001
-#define ì†Œìˆ˜11 0.00000000001
-#define ì†Œìˆ˜10 0.0000000001
-#define ì†Œìˆ˜9 0.000000001
-#define ì†Œìˆ˜8 0.00000001
-#define ì†Œìˆ˜7 0.0000001
-#define ì†Œìˆ˜6 0.000001
-#define ì†Œìˆ˜5 0.00001
-#define ì†Œìˆ˜4 0.0001
-#define ì†Œìˆ˜3 0.001
-#define ì†Œìˆ˜2 0.01
-#define ì†Œìˆ˜1 0.1
-#define ì˜ 0
-#define ê³µ 0
-#define ì¼ 1
-#define í•˜ë‚˜ 1
-#define ì´ 2
-#define ë‘˜ 2
-#define ì‚¼ 3
-#define ì…‹ 3
-#define ì‚¬ 4
-#define ë„· 4
-#define ì˜¤ 5
-#define ë‹¤ì„¯ 5
-#define ìœ¡ 6
-#define ì—¬ì„¯ 6
-#define ì¹  7
-#define ì¼ê³± 7
-#define íŒ” 8
-#define ì—¬ëŸ 8
-#define êµ¬ 9
-#define ì•„í™‰ 9
-#define ì‹­ 10
-#define ì—´ 10
-#define ë°± 100
-#define ì²œ 1000
-#define ë§Œ 10000
-#define ì¼ë§Œ 10000
-#define ì‹­ë§Œ 100000
-#define ë°±ë§Œ 1000000
-#define ì²œë§Œ 10000000
-#define ì–µ 100000000
-#define ì¼ì–µ 100000000
-#define ì‹­ì–µ 1000000000
-#define ë°±ì–µ 10000000000
-#define ì²œì–µ 100000000000
-#define ì¡° 1000000000000
-#define ì¼ì¡° 1000000000000
-#define ì‹­ì¡° 10000000000000
-#define ë°±ì¡° 100000000000000
-#define ì²œì¡° 1000000000000000
-#define ê²½ 10000000000000000
-#define ì¼ê²½ 10000000000000000
-#define ì‹­ê²½ 100000000000000000
-#define ë°±ê²½ 1000000000000000000
-#define ì²œê²½ 10000000000000000000
-#define í•´ 100000000000000000000
-#define ì¼í•´ 100000000000000000000
-#define ì‹­í•´ 1000000000000000000000
-#define ë°±í•´ 10000000000000000000000
-#define ì²œí•´ 100000000000000000000000
-#define ì–‘ 1000000000000000000000000
-#define ì¼ì–‘ 1000000000000000000000000
-#define ì‹­ì–‘ 10000000000000000000000000
-#define ë°±ì–‘ 100000000000000000000000000
-#define ì²œì–‘ 1000000000000000000000000000
-
-// ìë£Œí˜•
-typedef void ë¹ˆ;
-typedef short ì •ìˆ˜16;
-typedef unsigned short ë¶€í˜¸ì—†ëŠ”ì •ìˆ˜16;
-typedef int ì •ìˆ˜32;
-typedef unsigned int ë¶€í˜¸ì—†ëŠ”ì •ìˆ˜32;
-typedef long long ì •ìˆ˜64;
-typedef unsigned long long ë¶€í˜¸ì—†ëŠ”ì •ìˆ˜64;
-typedef bool ë¶ˆ;
-typedef float ì‹¤ìˆ˜;
-typedef double ì •ë°€ì‹¤ìˆ˜;
-typedef char ë¬¸ì;
-typedef unsigned char ë¶€í˜¸ì—†ëŠ”ë¬¸ì;
+#define ½Ã°£ time
 
 #endif
