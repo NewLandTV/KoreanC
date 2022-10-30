@@ -9,6 +9,12 @@
 #define 출력 std::cout <<
 #define 서식입력 scanf
 #define 서식출력 printf
+#define 서식입력_안전 scanf_s
+#define 서식출력_안전 printf_s
+#define 유니코드서식입력 wscanf
+#define 유니코드서식출력 wprintf
+#define 유니코드서식입력_안전 wscanf_s
+#define 유니코드서식출력_안전 wprintf_s
 
 // 이스케이프 시퀀스
 #define 경고음 "\a"
@@ -21,6 +27,8 @@
 
 // 구문과 키워드
 #define 만약 if
+#define 아니고만약 else if
+#define 만약아니면 else
 #define 반복 for
 #define 한다 do
 #define 동안 while
@@ -266,10 +274,29 @@ typedef struct _COORD 좌표;
 
 #define 시스템 system
 #define 종료 exit
+#define 무작위 rand
+#define 무작위시드설정 srand
 
 // time.h 관련
 #include <time.h>
 
 #define 시간 time
+
+// locale.h 관련
+#include <locale.h>
+
+#define 장소설정 _wsetlocale
+
+#define 장소_전체 LC_ALL
+#define 장소_대조 LC_COLLATE
+#define 장소_씨타입 LC_CTYPE
+#define 장소_통화 LC_MONETARY
+#define 장소_숫자 LC_NUMERIC
+#define 장소_시간 LC_TIME
+
+#define 장소_최소 LC_ALL
+#define 장소_최대 LC_TIME
+
+#define 유니코드(ㅇ) L##ㅇ
 
 #endif

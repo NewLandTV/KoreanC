@@ -7,6 +7,12 @@ Implemented Korean programming in C/C++.
 | `std::cout <<` | 출력 |
 | `scanf` | 서식입력 |
 | `printf` | 서식출력 |
+| `scanf_s` | 서식입력_안전 |
+| `printf_s` | 서식출력_안전 |
+| `wscanf` | 유니코드서식입력 |
+| `wprintf` | 유니코드서식출력 |
+| `wscanf_s` | 유니코드서식입력_안전 |
+| `wprintf_s` | 유니코드서식출력_안전 |
 | `\a` | 경고음 |
 | `\n` | 줄바꿈 |
 | `\t` | 수평탭 |
@@ -15,6 +21,8 @@ Implemented Korean programming in C/C++.
 | `\f` | 폼피드 |
 | `\r` | 캐리지리턴 |
 | `if` | 만약 |
+| `else if` | 아니고만약 |
+| `else` | 만약아니면 |
 | `for` | 반복 |
 | `do` | 한다 |
 | `while` | 동안 |
@@ -219,7 +227,20 @@ Implemented Korean programming in C/C++.
 | `Y` | ㅍ |
 | `system` | 시스템 |
 | `exit` | 종료 |
+| `rand` | 무작위 |
+| `srand` | 무작위시드설정 |
 | `time` | 시간 |
+| `_wsetlocale` | 장소설정 |
+| `LC_ALL` | 장소_전체 |
+| `LC_COLLATE` | 장소_대조 |
+| `LC_CTYPE` | 장소_씨타입 |
+| `LC_MONETARY` | 장소_통화 |
+| `LC_NUMERIC` | 장소_숫자 |
+| `LC_TIME` | 장소_시간 |
+| `LC_ALL` | 장소_최소 |
+| `LC_TIME` | 장소_최대 |
+| `L##o` | 유니코드(o) |
 
 Youtube Ch : https://www.youtube.com/channel/UC0lR1aYGgOhFioC3IsazUtw
+<br>
 Naver Cafe : https://cafe.naver.com/2019newland
