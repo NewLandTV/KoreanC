@@ -6,7 +6,7 @@ Implemented Korean programming in C/C++.
 | `std::cin >>` | 입력 |
 | `std::cout <<` | 출력 |
 | `scanf` | 서식입력 |
-| `printf` | 서식출력 력
+| `printf` | 서식출력 |
 | `\a` | 경고음 |
 | `\n` | 줄바꿈 |
 | `\t` | 수평탭 |
