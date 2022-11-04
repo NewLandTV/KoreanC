@@ -1,7 +1,7 @@
 # KoreanC
 Implemented Korean programming in C/C++.
 
-| | **v0.3 Syntax** |
+| | **v0.5 Syntax** |
 |:---:|:---:|
 | `std::cin >>` | 입력 |
 | `std::cout <<` | 출력 |
