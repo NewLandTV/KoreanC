@@ -1,7 +1,7 @@
 # KoreanC
 Implemented Korean programming in C/C++.
 
-| | **v0.5 Syntax** |
+| | **v0.6 Syntax** |
 |:---:|:---:|
 | `std::cin >>` | 입력 |
 | `std::cout <<` | 출력 |
@@ -13,6 +13,20 @@ Implemented Korean programming in C/C++.
 | `wprintf` | 유니코드서식출력 |
 | `wscanf_s` | 유니코드서식입력_안전 |
 | `wprintf_s` | 유니코드서식출력_안전 |
+| `fscanf` | 파일서식입력 |
+| `fprintf` | 파일서식출력 |
+| `fscanf_s` | 파일서식입력_안전 |
+| `fprintf_s` | 파일서식출력_안전 |
+| `sprintf` | 서식저장 |
+| `fopen` | 파일열기 |
+| `fopen_s` | 파일열기_안전 |
+| `fclose` | 파일닫기 |
+| `fgetc` | 파일에서문자얻기 |
+| `fputc` | 파일에서문자놓기 |
+| `fgets` | 파일에서문자열얻기 |
+| `fputs` | 파일에서문자열놓기 |
+| `std` | 표준 |
+| `std::cin.getline` | 줄얻기 |
 | `\a` | 경고음 |
 | `\n` | 줄바꿈 |
 | `\t` | 수평탭 |
@@ -20,6 +34,19 @@ Implemented Korean programming in C/C++.
 | `\b` | 백스페이스 |
 | `\f` | 폼피드 |
 | `\r` | 캐리지리턴 |
+| `r` | 읽기모드 |
+| `w` | 쓰기모드 |
+| `a` | 추가쓰기모드 |
+| `r+` | 더읽기모드 |
+| `w+` | 더쓰기모드 |
+| `a+` | 더추가쓰기모드 |
+| `rb` | 바이너리읽기모드 |
+| `wb` | 바이너리쓰기모드 |
+| `ab` | 바이너리추가쓰기모드 |
+| `r+b` | 바이너리더읽기모드 |
+| `w+b` | 바이너리더쓰기모드 |
+| `a+b` | 바이너리더추가쓰기모드 |
+| `endl` | 다음줄 |
 | `if` | 만약 |
 | `else if` | 아니고만약 |
 | `else` | 만약아니면 |
@@ -44,10 +71,13 @@ Implemented Korean programming in C/C++.
 | `protected` | 보호 |
 | `private` | 비공개 |
 | `template` | 템플릿 |
+| `using` | 사용 |
+| `namespace` | 이름공간 |
 | `dynamic_cast` | 동적_변화 |
 | `static_cast` | 정적_변화 |
 | `const_cast` | 상주_변화 |
 | `reinterpret_cast` | 포인터_변화 |
+| `nullptr` | 없음 |
 | `+` | 더하기 |
 | `-` | 빼기 |
 | `*` | 곱하기 |
@@ -208,6 +238,7 @@ Implemented Korean programming in C/C++.
 | `double` | 정밀실수 |
 | `char` | 문자 |
 | `unsigned char` | 부호없는문자 |
+| `_iobuf` | 파일 |
 | `_kbhit()` | 누름자판눌림 |
 | `_getch()` | 눌린자판얻기 |
 | `SetConsoleCursorInfo` | 출력창이동막대정보설정 |

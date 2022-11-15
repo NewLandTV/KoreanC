@@ -15,6 +15,26 @@
 #define 유니코드서식출력 wprintf
 #define 유니코드서식입력_안전 wscanf_s
 #define 유니코드서식출력_안전 wprintf_s
+#define 파일서식입력 fscanf
+#define 파일서식출력 fprintf
+#define 파일서식입력_안전 fscanf_s
+#define 파일서식출력_안전 fprintf_s
+#define 서식저장 sprintf
+
+// 파일 열기 닫기
+#define 파일열기 fopen
+#define 파일열기_안전 fopen_s
+#define 파일닫기 fclose
+
+// 파일 읽기 쓰기 관련
+#define 파일에서문자얻기 fgetc
+#define 파일에서문자놓기 fputc
+#define 파일에서문자열얻기 fgets
+#define 파일에서문자열놓기 fputs
+
+#define 표준 std
+
+#define 줄얻기 std::cin.getline
 
 // 이스케이프 시퀀스
 #define 경고음 "\a"
@@ -24,6 +44,22 @@
 #define 백스페이스 "\b"
 #define 폼피드 "\f"
 #define 캐리지리턴 "\r"
+
+// 파일 모드
+#define 읽기모드 "r"
+#define 쓰기모드 "w"
+#define 추가쓰기모드 "a"
+#define 더읽기모드 "r+"
+#define 더쓰기모드 "w+"
+#define 더추가쓰기모드 "a+"
+#define 바이너리읽기모드 "rb"
+#define 바이너리쓰기모드 "wb"
+#define 바이너리추가쓰기모드 "ab"
+#define 바이너리더읽기모드 "r+b"
+#define 바이너리더쓰기모드 "w+b"
+#define 바이너리더추가쓰기모드 "a+b"
+
+#define 다음줄 endl
 
 // 구문과 키워드
 #define 만약 if
@@ -54,11 +90,16 @@
 
 #define 템플릿 template
 
+#define 사용 using
+#define 이름공간 namespace
+
 // 형변환 관련
 #define 동적_변화 dynamic_cast
 #define 정적_변화 static_cast
 #define 상수_변화 const_cast
 #define 포인터_변화 reinterpret_cast
+
+#define 없음 nullptr
 
 // 연산자
 #define 더하기 +
@@ -236,6 +277,9 @@ typedef float 실수;
 typedef double 정밀실수;
 typedef char 문자;
 typedef unsigned char 부호없는문자;
+
+// 구조체
+typedef _iobuf 파일;
 
 // conio.h 관련
 #include <conio.h>
