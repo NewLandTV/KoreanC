@@ -1,7 +1,7 @@
 # KoreanC
 Implemented Korean programming in C/C++.
 
-| | **v0.6 Syntax** |
+| | **v0.7 Syntax** |
 |:---:|:---:|
 | `std::cin >>` | 입력 |
 | `std::cout <<` | 출력 |
@@ -18,6 +18,7 @@ Implemented Korean programming in C/C++.
 | `fscanf_s` | 파일서식입력_안전 |
 | `fprintf_s` | 파일서식출력_안전 |
 | `sprintf` | 서식저장 |
+| `sprintf_s` | 서식저장_안전 |
 | `fopen` | 파일열기 |
 | `fopen_s` | 파일열기_안전 |
 | `fclose` | 파일닫기 |
