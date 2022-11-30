@@ -20,6 +20,7 @@
 #define 파일서식입력_안전 fscanf_s
 #define 파일서식출력_안전 fprintf_s
 #define 서식저장 sprintf
+#define 서식저장_안전 sprintf_s
 
 // 파일 열기 닫기
 #define 파일열기 fopen
