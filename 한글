@@ -304,6 +304,111 @@ typedef _iobuf 파일;
 #define 표준_출력_관리자 STD_OUTPUT_HANDLE
 #define 표준_문제_관리자 STD_ERROR_HANDLE
 
+#define 창진입점 WinMain
+
+typedef LRESULT 긴정수결과;
+typedef LPWSTR 긴포인터유니코드문자열;
+typedef LPCWSTR 상수긴포인터유니코드문자열;
+
+#define 뒤처리 CALLBACK
+
+typedef HWND 창관리자;
+typedef WPARAM 부호없는정수포인터매개변수;
+typedef LPARAM 긴포인터매개변수;
+typedef MSG 메시지;
+
+#define ㅁㅅㅈ긴포인터매개변수 wParam
+
+typedef LPSTR 긴포인터문자열;
+typedef WNDCLASSEX 창클래스ㄷㅌ;
+
+#define 스타일 style
+#define ㄱㅍ식단표이름 lpszMenuName
+#define ㄱㅍ클래스이름 lpszClassName
+#define ㄱㅍ창진행함수 lpfnWndProc
+#define ㅎ인스턴스 hInstance
+#define ㅎ작은아이콘 hIconSm
+#define ㅎ아이콘 hIcon
+#define ㅎ이동막대 hCursor
+#define ㅂ배경 hbrBackground
+#define ㅈ창추가 cbWndExtra
+#define ㅈ치수 cbSize
+#define ㅈ클추가 cbClsExtra
+
+#define 창스타일_높이감지그리기 CS_VREDRAW
+#define 창스타일_너비감지그리기 CS_HREDRAW
+#define 창스타일_두누름 CS_DBLCLKS
+#define 창스타일_고유한디바이스컨텍스트 CS_OWNDC
+#define 창스타일_클래스디바이스컨텍스트 CS_CLASSDC
+#define 창스타일_부모디바이스컨텍스트 CS_PARENTDC
+#define 창스타일_닫기사용안함 CS_NOCLOSE
+#define 창스타일_비트저장 CS_SAVEBITS
+#define 창스타일_바이트클라이언트맞추기 CS_BYTEALIGNCLIENT
+#define 창스타일_바이트창맞추기 CS_BYTEALIGNWINDOW
+#define 창스타일_전역클래스 CS_GLOBALCLASS
+
+#define 아이콘불러오기 LoadIcon
+#define 이동막대불러오기 LoadCursor
+
+#define 식별아이콘_구동 IDI_APPLICATION
+#define 식별이동막대_화살표 IDC_ARROW
+
+typedef HBRUSH ㅎ브러쉬;
+
+#define 색_미는막대 COLOR_SCROLLBAR
+#define 색_배경 COLOR_BACKGROUND
+#define 색_활성표제 COLOR_ACTIVECAPTION
+#define 색_활성안표제 COLOR_INACTIVECAPTION
+#define 색_식단표 COLOR_MENU
+#define 색_창 COLOR_WINDOW
+#define 색_창틀 COLOR_WINDOWFRAME
+#define 색_식단표글 COLOR_MENUTEXT
+#define 색_창글 COLOR_WINDOWTEXT
+#define 색_표제글 COLOR_CAPTIONTEXT
+#define 색_활성가장자리 COLOR_ACTIVEBORDER
+#define 색_활성안가장자리 COLOR_INACTIVEBORDER
+#define 색_구동작업공간 COLOR_APPWORKSPACE
+#define 색_높은빛 COLOR_HIGHLIGHT
+#define 색_높은빛글 COLOR_HIGHLIGHTTEXT
+#define 색_버튼안면 COLOR_BTNFACE
+#define 색_버튼그림자 COLOR_BTNSHADOW
+#define 색_회색글 COLOR_GRAYTEXT
+#define 색_버튼글 COLOR_BTNTEXT
+#define 색_활성안표제글 COLOR_INACTIVECAPTIONTEXT
+#define 색_버튼높은빛 COLOR_BTNHIGHLIGHT
+
+#define ㅊㅈ_기본으로사용 CW_USEDEFAULT
+
+#define 창_겹쳐진창 WS_OVERLAPPEDWINDOW
+
+#define 창관리자_바탕 HWND_DESKTOP
+
+typedef HINSTANCE 인스턴스관라자;
+
+#define 창구동문제처리설계 WINAPI
+
+#define 창메시지_페인트 WM_PAINT
+#define 창메시지_제거 WM_DESTROY
+
+#define 클래스ㄷㅌ등록 RegisterClassEx
+#define 창ㄷㅌ만들기 CreateWindowEx
+#define 창보여주기 ShowWindow
+
+#define 메시지얻기 GetMessage
+#define 메시지번역 TranslateMessage
+#define 메시지보내기 DispatchMessage
+#define 나가기메시지보내기 PostQuitMessage
+
+#define 기본창진행 DefWindowProc
+
+#define 페인트시작 BeginPaint
+#define 페인트끝 EndPaint
+
+#define 글출력 TextOut
+
+typedef HDC 디바이스컨텍스트관리자;
+typedef PAINTSTRUCT 페인트구조체;
+
 typedef struct _CONSOLE_CURSOR_INFO 출력창_이동막대_정보;
 
 #define ㅂㄱㅈ치수 dwSize
