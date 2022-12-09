@@ -387,12 +387,18 @@ typedef HINSTANCE 인스턴스관라자;
 
 #define 창구동문제처리설계 WINAPI
 
+#define 창메시지_명령어 WM_COMMAND
 #define 창메시지_페인트 WM_PAINT
 #define 창메시지_제거 WM_DESTROY
+#define 창메시지_누름자판누름 WM_KEYDOWN
+
+#define 값누름자판_왼쪽 VK_LEFT
+#define 값누름자판_오른쪽 VK_RIGHT
 
 #define 클래스ㄷㅌ등록 RegisterClassEx
 #define 창ㄷㅌ만들기 CreateWindowEx
 #define 창보여주기 ShowWindow
+#define 창파괴하기 DestroyWindow
 
 #define 메시지얻기 GetMessage
 #define 메시지번역 TranslateMessage
@@ -402,9 +408,15 @@ typedef HINSTANCE 인스턴스관라자;
 #define 기본창진행 DefWindowProc
 
 #define 페인트시작 BeginPaint
+#define 이동ㄷㅌ MoveToEx
+#define 선그리기 LineTo
 #define 페인트끝 EndPaint
 
+#define 무효화사각다시출력 InvalidateRect
+
 #define 글출력 TextOut
+
+#define 낮은단어로 LOWORD
 
 typedef HDC 디바이스컨텍스트관리자;
 typedef PAINTSTRUCT 페인트구조체;
@@ -448,5 +460,19 @@ typedef struct _COORD 좌표;
 #define 장소_최대 LC_TIME
 
 #define 유니코드(ㅇ) L##ㅇ
+
+#include <math.h>
+
+#define 사인 sin
+#define 역사인 asin
+#define 코사인 cos
+#define 역코사인 acos
+#define 탄젠트 tan
+#define 역탄젠트 atan
+#define 역탄젠트ㄷ atan2f
+#define 제곱근 sqrt
+#define 제곱 pow
+#define 파이 3.1415926535897f
+#define 각을라디안으로 파이 / 180.0f
 
 #endif

@@ -1,7 +1,7 @@
 # KoreanC
 Implemented Korean programming in C/C++.
 
-| | **v0.8 Syntax** |
+| | **v0.9 Syntax** |
 |:---:|:---:|
 | `std::cin >>` | 입력 |
 | `std::cout <<` | 출력 |
@@ -317,19 +317,28 @@ Implemented Korean programming in C/C++.
 | `HWND_DESKTOP` | 창관리자_바탕 |
 | `HINSTANCE` | 인스턴스관라자 |
 | `WINAPI` | 창구동문제처리설계 |
+| `WM_COMMAND` | 창메시지_명령어 |
 | `WM_PAINT` | 창메시지_페인트 |
 | `WM_DESTROY` | 창메시지_제거 |
+| `WM_KEYDOWN` | 창메시지_누름자판누름 |
+| `VK_LEFT` | 값누름자판_왼쪽 |
+| `VK_RIGHT` | 같누름자판_오른쪽 |
 | `RegisterClassEx` | 클래스ㄷㅌ등록 |
 | `CreateWindowEx` | 창ㄷㅌ만들기 |
 | `ShowWindow` | 창보여주기 |
+| `DestroyWindow` | 창파괴하기 |
 | `GetMessage` | 메시지얻기 |
 | `TranslateMessage` | 메시지번역 |
 | `DispatchMessage` | 메시지보내기 |
 | `PostQuitMessage` | 나가기메시지보내기 |
 | `DefWindowProc` | 기본창진행 |
 | `BeginPaint` | 페인트시작 |
+| `MoveToEx` | 이동ㄷㅌ |
+| `LineTo` | 선그리기 |
 | `EndPaint` | 페인트끝 |
+| `InvalidateRect` | 무효화사각다시출력 |
 | `TextOut` | 글출력 |
+| `LOWORD` | 낮은단어로 |
 | `HDC` | 디바이스컨텍스트관리자 |
 | `PAINTSTRUCT` | 페인트구조체 |
 | `struct _CONSOLE_CURSOR_INFO` | 출력창_이동막대_정보 |
@@ -353,6 +362,17 @@ Implemented Korean programming in C/C++.
 | `LC_ALL` | 장소_최소 |
 | `LC_TIME` | 장소_최대 |
 | `L##o` | 유니코드(o) |
+| `sin` | 사인 |
+| `asin` | 역사인 |
+| `cos` | 코사인 |
+| `acos` | 역코사인 |
+| `tan` | 탄젠트 |
+| `atan` | 역탄젠트 |
+| `atan2f` | 역탄젠트ㄷ |
+| `sqrt` | 제곱근 |
+| `pow` | 제곱 |
+| `3.1415926535897f` | 파이 |
+| `파이 / 180.0f` | 각을라디안으로 |
 
 Youtube Ch : https://www.youtube.com/channel/UC0lR1aYGgOhFioC3IsazUtw
 <br>
