@@ -1,4 +1,4 @@
-# KoreanC
+# **KoreanC**
 Implemented Korean programming in C/C++.
 
 | | **v0.9 Syntax** |
@@ -374,6 +374,9 @@ Implemented Korean programming in C/C++.
 | `3.1415926535897f` | 파이 |
 | `파이 / 180.0f` | 각을라디안으로 |
 
-Youtube Ch : https://www.youtube.com/channel/UC0lR1aYGgOhFioC3IsazUtw
-<br>
-Naver Cafe : https://cafe.naver.com/2019newland
+# **Links(링크)**
+
+* [JkhTV YouTube(장경혁tv)](https://www.youtube.com/@NewLand2019-JkhTV)
+* [NewLand Cafe(New랜드 카페)](https://cafe.naver.com/2019newland)
+* [NewLand Discord(New랜드 디스코드)](https://discord.gg/2J646MaZGA)
+* [JkhTV Tistory(장경혁tv의 티스토리)](https://jkhtv.tistory.com)
