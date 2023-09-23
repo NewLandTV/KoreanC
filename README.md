@@ -1,4 +1,4 @@
-# **KoreanC**
+# **KoreanC(한글 C)**
 Implemented Korean programming in C/C++.
 
 | | **v0.9 Syntax** |
