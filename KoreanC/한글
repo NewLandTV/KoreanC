@@ -1,0 +1,478 @@
+#ifndef __한글_문법__
+#define __한글_문법__
+
+// 기본 한글 문법 관련
+#include <iostream>
+
+// 표준 입출력
+#define 입력 std::cin >>
+#define 출력 std::cout <<
+#define 서식입력 scanf
+#define 서식출력 printf
+#define 서식입력_안전 scanf_s
+#define 서식출력_안전 printf_s
+#define 유니코드서식입력 wscanf
+#define 유니코드서식출력 wprintf
+#define 유니코드서식입력_안전 wscanf_s
+#define 유니코드서식출력_안전 wprintf_s
+#define 파일서식입력 fscanf
+#define 파일서식출력 fprintf
+#define 파일서식입력_안전 fscanf_s
+#define 파일서식출력_안전 fprintf_s
+#define 서식저장 sprintf
+#define 서식저장_안전 sprintf_s
+
+// 파일 열기 닫기
+#define 파일열기 fopen
+#define 파일열기_안전 fopen_s
+#define 파일닫기 fclose
+
+// 파일 읽기 쓰기 관련
+#define 파일에서문자얻기 fgetc
+#define 파일에서문자놓기 fputc
+#define 파일에서문자열얻기 fgets
+#define 파일에서문자열놓기 fputs
+
+#define 표준 std
+
+#define 줄얻기 std::cin.getline
+
+// 이스케이프 시퀀스
+#define 경고음 "\a"
+#define 줄바꿈 "\n"
+#define 수평탭 "\t"
+#define 수직탭 "\v"
+#define 백스페이스 "\b"
+#define 폼피드 "\f"
+#define 캐리지리턴 "\r"
+
+// 파일 모드
+#define 읽기모드 "r"
+#define 쓰기모드 "w"
+#define 추가쓰기모드 "a"
+#define 더읽기모드 "r+"
+#define 더쓰기모드 "w+"
+#define 더추가쓰기모드 "a+"
+#define 바이너리읽기모드 "rb"
+#define 바이너리쓰기모드 "wb"
+#define 바이너리추가쓰기모드 "ab"
+#define 바이너리더읽기모드 "r+b"
+#define 바이너리더쓰기모드 "w+b"
+#define 바이너리더추가쓰기모드 "a+b"
+
+#define 다음줄 endl
+
+// 구문과 키워드
+#define 만약 if
+#define 아니고만약 else if
+#define 만약아니면 else
+#define 반복 for
+#define 한다 do
+#define 동안 while
+#define 선택 switch
+#define 중단 break
+#define 계속 continue
+#define 선택자 case
+#define 기본 default
+#define 반환 return
+#define 가기 goto
+
+#define 새로운 new
+#define 제거 delete
+#define 구조체 struct
+#define 공용체 union
+#define 클래스 class
+#define 자료정의 typedef
+#define 치수구하기 sizeof
+
+#define 공개 public
+#define 보호 protected
+#define 비공개 private
+
+#define 템플릿 template
+
+#define 사용 using
+#define 이름공간 namespace
+
+// 형변환 관련
+#define 동적_변화 dynamic_cast
+#define 정적_변화 static_cast
+#define 상수_변화 const_cast
+#define 포인터_변화 reinterpret_cast
+
+#define 없음 nullptr
+
+// 연산자
+#define 더하기 +
+#define 빼기 -
+#define 곱하기 *
+#define 나누기 /
+#define 나머지 %
+#define 아니면 ||
+#define 그리고 &&
+#define 같음 ==
+#define 다름 !=
+#define 보다큰 <
+#define 보다작은 >
+#define 보다크거나같음 <=
+#define 보다작거나같음 >=
+#define 반대 !
+#define 비트아니면 |
+#define 비트그리고 &
+#define 비트반대 ~
+#define 비트베타적논리합 ^
+#define 비트왼쪽시프트 <<
+#define 비트오른쪽시프트 >>
+#define 대입 =
+#define 주소 &
+#define 포인터 *
+#define 증감 ++
+#define 감소 --
+#define 더하기대입 +=
+#define 빼기대입 -=
+#define 곱하기대입 *=
+#define 나누기대입 /=
+#define 나머지대입 %=
+#define 플러스 +
+#define 마이너스 -
+#define 양수 +
+#define 음수 -
+
+#define 물음표 ?
+#define 쌍점 :
+#define 두쌍점 ::
+#define 쌍반점 ;
+#define 콤마 ,
+#define 과 ,
+#define 와 ,
+#define 점 .
+#define 멤버 .
+#define 안에 .
+
+// 괄호 종류
+#define 괄호열기 (
+#define 괄호닫기 )
+#define 괄호열고닫기 ()
+#define 중괄호열기 {
+#define 중괄호닫기 }
+#define 중괄호열고닫기 {}
+#define 대괄호열기 [
+#define 대괄호닫기 ]
+#define 대괄호열고닫기 []
+#define 홑화살괄호열기 <
+#define 홑화살괄호닫기 >
+#define 홑화살괄호열고닫기 <>
+
+// 메인 함수
+#define 진입점 main
+
+// 참과 거짓
+#define 참 true
+#define 거짓 false
+
+#define 상수 const
+#define 정적 static
+
+// C malloc & free
+#define 동적메모리할당 malloc
+#define 동적메모리반환 free
+
+// 숫자
+#define 소수32 0.00000000000000000000000000000001
+#define 소수31 0.0000000000000000000000000000001
+#define 소수30 0.000000000000000000000000000001
+#define 소수29 0.00000000000000000000000000001
+#define 소수28 0.0000000000000000000000000001
+#define 소수27 0.000000000000000000000000001
+#define 소수26 0.00000000000000000000000001
+#define 소수25 0.0000000000000000000000001
+#define 소수24 0.000000000000000000000001
+#define 소수23 0.00000000000000000000001
+#define 소수22 0.0000000000000000000001
+#define 소수21 0.000000000000000000001
+#define 소수20 0.00000000000000000001
+#define 소수19 0.0000000000000000001
+#define 소수18 0.000000000000000001
+#define 소수17 0.00000000000000001
+#define 소수16 0.0000000000000001
+#define 소수15 0.000000000000001
+#define 소수14 0.00000000000001
+#define 소수13 0.0000000000001
+#define 소수12 0.000000000001
+#define 소수11 0.00000000001
+#define 소수10 0.0000000001
+#define 소수9 0.000000001
+#define 소수8 0.00000001
+#define 소수7 0.0000001
+#define 소수6 0.000001
+#define 소수5 0.00001
+#define 소수4 0.0001
+#define 소수3 0.001
+#define 소수2 0.01
+#define 소수1 0.1
+#define 영 0
+#define 공 0
+#define 일 1
+#define 하나 1
+#define 이 2
+#define 둘 2
+#define 삼 3
+#define 셋 3
+#define 사 4
+#define 넷 4
+#define 오 5
+#define 다섯 5
+#define 육 6
+#define 여섯 6
+#define 칠 7
+#define 일곱 7
+#define 팔 8
+#define 여덟 8
+#define 구 9
+#define 아홉 9
+#define 십 10
+#define 열 10
+#define 백 100
+#define 천 1000
+#define 만 10000
+#define 일만 10000
+#define 십만 100000
+#define 백만 1000000
+#define 천만 10000000
+#define 억 100000000
+#define 일억 100000000
+#define 십억 1000000000
+#define 백억 10000000000
+#define 천억 100000000000
+#define 조 1000000000000
+#define 일조 1000000000000
+#define 십조 10000000000000
+#define 백조 100000000000000
+#define 천조 1000000000000000
+#define 경 10000000000000000
+#define 일경 10000000000000000
+#define 십경 100000000000000000
+#define 백경 1000000000000000000
+#define 천경 10000000000000000000
+#define 해 100000000000000000000
+#define 일해 100000000000000000000
+#define 십해 1000000000000000000000
+#define 백해 10000000000000000000000
+#define 천해 100000000000000000000000
+#define 양 1000000000000000000000000
+#define 일양 1000000000000000000000000
+#define 십양 10000000000000000000000000
+#define 백양 100000000000000000000000000
+#define 천양 1000000000000000000000000000
+
+// 자료형
+typedef void 빈;
+typedef short 짧은정수;
+typedef unsigned short 부호없는짧은정수;
+typedef int 정수;
+typedef unsigned int 부호없는정수;
+typedef long long 긴긴정수;
+typedef unsigned long long 부호없는긴긴정수;
+typedef bool 불;
+typedef float 실수;
+typedef double 정밀실수;
+typedef char 문자;
+typedef unsigned char 부호없는문자;
+
+// 구조체
+typedef _iobuf 파일;
+
+// conio.h 관련
+#include <conio.h>
+
+#define 누름자판눌림 _kbhit()
+#define 눌린자판얻기 _getch()
+
+// Windows.h 관련
+#include <Windows.h>
+
+// 함수를 한글로 호출할 수 있게 전처리기 작업
+#define 출력창이동막대정보설정 SetConsoleCursorInfo
+#define 출력창이동막대좌표설정 SetConsoleCursorPosition
+#define 출력창화면버퍼치수 SetConsoleScreenBufferSize
+#define 표준관리자얻기 GetStdHandle
+#define 표준관리자설정 SetStdHandle
+#define 잠자기 Sleep
+
+// STD_ INPUT OUTPUT ERROR _HANDLE
+#define 표준_입력_관리자 STD_INPUT_HANDLE
+#define 표준_출력_관리자 STD_OUTPUT_HANDLE
+#define 표준_문제_관리자 STD_ERROR_HANDLE
+
+#define 창진입점 WinMain
+
+typedef LRESULT 긴정수결과;
+typedef LPWSTR 긴포인터유니코드문자열;
+typedef LPCWSTR 상수긴포인터유니코드문자열;
+
+#define 뒤처리 CALLBACK
+
+typedef HWND 창관리자;
+typedef WPARAM 부호없는정수포인터매개변수;
+typedef LPARAM 긴포인터매개변수;
+typedef MSG 메시지;
+
+#define ㅁㅅㅈ긴포인터매개변수 wParam
+
+typedef LPSTR 긴포인터문자열;
+typedef WNDCLASSEX 창클래스ㄷㅌ;
+
+#define 스타일 style
+#define ㄱㅍ식단표이름 lpszMenuName
+#define ㄱㅍ클래스이름 lpszClassName
+#define ㄱㅍ창진행함수 lpfnWndProc
+#define ㅎ인스턴스 hInstance
+#define ㅎ작은아이콘 hIconSm
+#define ㅎ아이콘 hIcon
+#define ㅎ이동막대 hCursor
+#define ㅂ배경 hbrBackground
+#define ㅈ창추가 cbWndExtra
+#define ㅈ치수 cbSize
+#define ㅈ클추가 cbClsExtra
+
+#define 창스타일_높이감지그리기 CS_VREDRAW
+#define 창스타일_너비감지그리기 CS_HREDRAW
+#define 창스타일_두누름 CS_DBLCLKS
+#define 창스타일_고유한디바이스컨텍스트 CS_OWNDC
+#define 창스타일_클래스디바이스컨텍스트 CS_CLASSDC
+#define 창스타일_부모디바이스컨텍스트 CS_PARENTDC
+#define 창스타일_닫기사용안함 CS_NOCLOSE
+#define 창스타일_비트저장 CS_SAVEBITS
+#define 창스타일_바이트클라이언트맞추기 CS_BYTEALIGNCLIENT
+#define 창스타일_바이트창맞추기 CS_BYTEALIGNWINDOW
+#define 창스타일_전역클래스 CS_GLOBALCLASS
+
+#define 아이콘불러오기 LoadIcon
+#define 이동막대불러오기 LoadCursor
+
+#define 식별아이콘_구동 IDI_APPLICATION
+#define 식별이동막대_화살표 IDC_ARROW
+
+typedef HBRUSH ㅎ브러쉬;
+
+#define 색_미는막대 COLOR_SCROLLBAR
+#define 색_배경 COLOR_BACKGROUND
+#define 색_활성표제 COLOR_ACTIVECAPTION
+#define 색_활성안표제 COLOR_INACTIVECAPTION
+#define 색_식단표 COLOR_MENU
+#define 색_창 COLOR_WINDOW
+#define 색_창틀 COLOR_WINDOWFRAME
+#define 색_식단표글 COLOR_MENUTEXT
+#define 색_창글 COLOR_WINDOWTEXT
+#define 색_표제글 COLOR_CAPTIONTEXT
+#define 색_활성가장자리 COLOR_ACTIVEBORDER
+#define 색_활성안가장자리 COLOR_INACTIVEBORDER
+#define 색_구동작업공간 COLOR_APPWORKSPACE
+#define 색_높은빛 COLOR_HIGHLIGHT
+#define 색_높은빛글 COLOR_HIGHLIGHTTEXT
+#define 색_버튼안면 COLOR_BTNFACE
+#define 색_버튼그림자 COLOR_BTNSHADOW
+#define 색_회색글 COLOR_GRAYTEXT
+#define 색_버튼글 COLOR_BTNTEXT
+#define 색_활성안표제글 COLOR_INACTIVECAPTIONTEXT
+#define 색_버튼높은빛 COLOR_BTNHIGHLIGHT
+
+#define ㅊㅈ_기본으로사용 CW_USEDEFAULT
+
+#define 창_겹쳐진창 WS_OVERLAPPEDWINDOW
+
+#define 창관리자_바탕 HWND_DESKTOP
+
+typedef HINSTANCE 인스턴스관라자;
+
+#define 창구동문제처리설계 WINAPI
+
+#define 창메시지_명령어 WM_COMMAND
+#define 창메시지_페인트 WM_PAINT
+#define 창메시지_제거 WM_DESTROY
+#define 창메시지_누름자판누름 WM_KEYDOWN
+
+#define 값누름자판_왼쪽 VK_LEFT
+#define 값누름자판_오른쪽 VK_RIGHT
+
+#define 클래스ㄷㅌ등록 RegisterClassEx
+#define 창ㄷㅌ만들기 CreateWindowEx
+#define 창보여주기 ShowWindow
+#define 창파괴하기 DestroyWindow
+
+#define 메시지얻기 GetMessage
+#define 메시지번역 TranslateMessage
+#define 메시지보내기 DispatchMessage
+#define 나가기메시지보내기 PostQuitMessage
+
+#define 기본창진행 DefWindowProc
+
+#define 페인트시작 BeginPaint
+#define 이동ㄷㅌ MoveToEx
+#define 선그리기 LineTo
+#define 페인트끝 EndPaint
+
+#define 무효화사각다시출력 InvalidateRect
+
+#define 글출력 TextOut
+
+#define 낮은단어로 LOWORD
+
+typedef HDC 디바이스컨텍스트관리자;
+typedef PAINTSTRUCT 페인트구조체;
+
+typedef struct _CONSOLE_CURSOR_INFO 출력창_이동막대_정보;
+
+#define ㅂㄱㅈ치수 dwSize
+#define ㅂ보임 bVisible
+
+typedef struct _COORD 좌표;
+
+#define ㅌ X
+#define ㅍ Y
+
+// stdlib.h 관련
+#include <stdlib.h>
+
+#define 시스템 system
+#define 종료 exit
+#define 무작위 rand
+#define 무작위시드설정 srand
+
+// time.h 관련
+#include <time.h>
+
+#define 시간 time
+
+// locale.h 관련
+#include <locale.h>
+
+#define 장소설정 _wsetlocale
+
+#define 장소_전체 LC_ALL
+#define 장소_대조 LC_COLLATE
+#define 장소_씨타입 LC_CTYPE
+#define 장소_통화 LC_MONETARY
+#define 장소_숫자 LC_NUMERIC
+#define 장소_시간 LC_TIME
+
+#define 장소_최소 LC_ALL
+#define 장소_최대 LC_TIME
+
+#define 유니코드(ㅇ) L##ㅇ
+
+#include <math.h>
+
+#define 사인 sin
+#define 역사인 asin
+#define 코사인 cos
+#define 역코사인 acos
+#define 탄젠트 tan
+#define 역탄젠트 atan
+#define 역탄젠트ㄷ atan2f
+#define 제곱근 sqrt
+#define 제곱 pow
+#define 파이 3.1415926535897f
+#define 각을라디안으로 파이 / 180.0f
+
+#endif

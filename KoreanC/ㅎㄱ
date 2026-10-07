@@ -1,0 +1,84 @@
+#ifndef __ㅎㄱ_ㅁㅂ__
+#define __ㅎㄱ_ㅁㅂ__
+
+// 기본 한글 문법 관련
+#include <iostream>
+
+// 표준 입출력
+#define ㅇㄹ std::cin >>
+#define ㅊㄹ std::cout <<
+#define ㅅㅅㅇㄹ scanf
+#define ㅅㅅㅊㄹ printf
+#define ㅅㅅㅇㄹ_ㅇㅈ scanf_s
+#define ㅅㅅㅊㄹ_ㅇㅈ printf_s
+#define ㅇㄴㅋㄷㅅㅅㅇㄹ wscanf
+#define ㅇㄴㅋㄷㅅㅅㅊㄹ wprintf
+#define ㅇㄴㅋㄷㅅㅅㅇㄹ_ㅇㅈ wscanf_s
+#define ㅇㄴㅋㄷㅅㅅㅊㄹ_ㅇㅈ wprintf_s
+#define ㅍㅇㅅㅅㅇㄹ fscanf
+#define ㅍㅇㅅㅅㅊㄹ fprintf
+#define ㅍㅇㅅㅅㅇㄹ_ㅇㅈ fscanf_s
+#define ㅍㅇㅅㅅㅊㄹ_ㅇㅈ fprintf_s
+#define ㅅㅅㅈㅈ sprintf
+#define ㅅㅅㅈㅈ_ㅇㅈ sprintf_s-
+
+#define ㅍㅈ std
+
+#define ㅈㅇㄱ std::cin.getline
+
+// 이스케이프 시퀀스
+#define ㄱㄱㅇ "\a"
+#define ㅈㅂㄲ "\n"
+#define ㅅㅍㅌ "\t"
+#define ㅅㅈㅌ "\v"
+#define ㅂㅅㅍㅇㅅ "\b"
+#define ㅍㅍㄷ "\f"
+#define ㅋㄹㅈㄹㅌ "\r"
+
+#define ㄷㅇㅈ endl
+
+// 구문과 키워드
+#define ㅁㅇ if
+#define ㅇㄴㄱㅁㅇ else if
+#define ㅁㅇㅇㄴㅁ else
+#define ㅂㅂ for
+#define ㅎㄷ do
+#define ㄷㅇ while
+#define ㅅㅌ switch
+#define ㅈㄷ break
+#define ㄱㅅ continue
+#define ㅅㅌㅈ case
+#define ㄱㅂ default
+#define ㅂㅎ return
+#define ㄱㄱ goto
+
+// 괄호 종류
+#define ㄱㅎㅇㄱ (
+#define ㄱㅎㄷㄱ )
+#define ㄱㅎㅇㄱㄷㄱ ()
+#define ㅈㄱㅎㅇㄱ {
+#define ㅈㄱㅎㄷㄱ }
+#define ㅈㄱㅎㅇㄱㄷㄱ {}
+
+// 메인 함수
+#define ㅈㅇㅈ main
+
+#define ㅆㅂㅈ ;
+
+// 숫자
+#define ㅇ 0
+
+// 자료형
+typedef void ㅈㄹㅎㅂ;
+typedef short ㅈㄹㅎㅉㅇㅈㅅ;
+typedef unsigned short ㅈㄹㅎㅂㅎㅇㄴㅉㅇㅈㅅ;
+typedef int ㅈㄹㅎㅈㅅ;
+typedef unsigned int ㅈㄹㅎㅂㅎㅇㄴㅈㅅ;
+typedef long long ㅈㄹㅎㄱㄱㅈㅅ;
+typedef unsigned long long ㅈㄹㅎㅂㅎㅇㄴㄱㄱㅈㅅ;
+typedef float ㅈㄹㅎㅅㅅ;
+typedef double ㅈㄹㅎㅈㅁㅅㅅ;
+typedef char ㅈㄹㅎㅁㅈ;
+typedef unsigned char ㅈㄹㅎㅂㅎㅇㄴㅁㅈ;
+
+#endif

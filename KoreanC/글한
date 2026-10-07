@@ -1,0 +1,478 @@
+#ifndef __법문_글한__
+#define __법문_글한__
+
+// 련관 법문 글한 본기
+#include <iostream>
+
+// 력출입 준표
+#define 력입 std::cin >>
+#define 력출 std::cout <<
+#define 력입식서 scanf
+#define 력출식서 printf
+#define 전안_력입식서 scanf_s
+#define 전안_력출식서 printf_s
+#define 력입식서드코니유 wscanf
+#define 력출식서드코니유 wprintf
+#define 전안_력입식서드코니유 wscanf_s
+#define 전안_력출식서드코니유 wprintf_s
+#define 력입식서일파 fscanf
+#define 력출식서일파 fprintf
+#define 전안_력입식서일파 fscanf_s
+#define 전안_력출식서일파 fprintf_s
+#define 장저식서 sprintf
+#define 전안_장저식서 sprintf_s
+
+// 기닫 기열 일파
+#define 기열일파 fopen
+#define 전안_기열일파 fopen_s
+#define 기닫일파 fclose
+
+// 련관 기쓰 기읽 일파
+#define 기얻자문서에일파 fgetc
+#define 기놓자문서에일파 fputc
+#define 기얻열자문서에일파 fgets
+#define 기놓열자문서에일파 fputs
+
+#define 준표 std
+
+#define 기얻줄 std::cin.getline
+
+// 스퀀시 프이케스이
+#define 음고경 "\a"
+#define 꿈바줄 "\n"
+#define 탭평수 "\t"
+#define 탭직수 "\v"
+#define 스이페스백 "\b"
+#define 드피폼 "\f"
+#define 턴리지리캐 "\r"
+
+// 드모 일파
+#define 드모기읽 "r"
+#define 드모기쓰 "w"
+#define 드모기쓰가추 "a"
+#define 드모기읽더 "r+"
+#define 드모기쓰더 "w+"
+#define 드모기쓰가추더 "a+"
+#define 드모기읽리너이바 "rb"
+#define 드모기쓰리너이바 "wb"
+#define 드모기쓰가추리너이바 "ab"
+#define 드모기읽더리너이바 "r+b"
+#define 드모기쓰더리너이바 "w+b"
+#define 드모기쓰가추더리너이바 "a+b"
+
+#define 줄음다 endl
+
+// 드워키 과문구
+#define 약만 if
+#define 약만고니아 else if
+#define 면니아약만 else
+#define 복반 for
+#define 다한 do
+#define 안동 while
+#define 택선 switch
+#define 단중 break
+#define 속계 continue
+#define 자택선 case
+#define 본기 default
+#define 환반 return
+#define 기기 goto
+
+#define 운로새 new
+#define 거제 delete
+#define 체조구 struct
+#define 체용공 union
+#define 스래클 class
+#define 의정료자 typedef
+#define 기하구수치 sizeof
+
+#define 개공 public
+#define 호보 protected
+#define 개공비 private
+
+#define 릿플템 template
+
+#define 용사 using
+#define 간공름이 namespace
+
+// 련관 환변형
+#define 화변_적동 dynamic_cast
+#define 화변_적정 static_cast
+#define 화변_수상 const_cast
+#define 화변_터인포 reinterpret_cast
+
+#define 음없 nullptr
+
+// 자산연
+#define 기하더 +
+#define 기빼 -
+#define 기하곱 *
+#define 기누나 /
+#define 지머나 %
+#define 면니아 ||
+#define 고리그 &&
+#define 음같 ==
+#define 름다 !=
+#define 큰다보 <
+#define 은작다보 >
+#define 음같나거크다보 <=
+#define 음같나거작다보 >=
+#define 대반 !
+#define 면니아트비 |
+#define 고리그트비 &
+#define 대반트비 ~
+#define 합리논적타베트비 ^
+#define 트프시쪽왼트비 <<
+#define 트프시쪽른오트비 >>
+#define 입대 =
+#define 소주 &
+#define 터인포 *
+#define 감증 ++
+#define 소감 --
+#define 입대기하더 +=
+#define 입대기빼 -=
+#define 입대기하곱 *=
+#define 입대기누나 /=
+#define 입대지머나 %=
+#define 스러플 +
+#define 스너이마 -
+#define 수양 +
+#define 수음 -
+
+#define 표음물 ?
+#define 점쌍 :
+#define 점쌍두 ::
+#define 점반쌍 ;
+#define 마콤 ,
+#define 과 ,
+#define 와 ,
+#define 점 .
+#define 버멤 .
+#define 에안 .
+
+// 류종 호괄
+#define 기열호괄 (
+#define 기닫호괄 )
+#define 기닫고열호괄 ()
+#define 기열호괄중 {
+#define 기닫호괄중 }
+#define 기닫고열호괄중 {}
+#define 기열호괄대 [
+#define 기닫호괄대 ]
+#define 기닫고열호괄대 []
+#define 기열호괄살화홑 <
+#define 기닫호괄살화홑 >
+#define 기닫고열호괄살화홑 <>
+
+// 수함 인메
+#define 점입진 main
+
+// 짓거 과참
+#define 참 true
+#define 짓거 false
+
+#define 수상 const
+#define 적정 static
+
+// eerf & collam C
+#define 당할리모메적동 malloc
+#define 환반리모메적동 free
+
+// 자숫
+#define _23수소 0.00000000000000000000000000000001
+#define _13수소 0.0000000000000000000000000000001
+#define _03수소 0.000000000000000000000000000001
+#define _92수소 0.00000000000000000000000000001
+#define _82수소 0.0000000000000000000000000001
+#define _72수소 0.000000000000000000000000001
+#define _62수소 0.00000000000000000000000001
+#define _52수소 0.0000000000000000000000001
+#define _42수소 0.000000000000000000000001
+#define _32수소 0.00000000000000000000001
+#define _22수소 0.0000000000000000000001
+#define _12수소 0.000000000000000000001
+#define _02수소 0.00000000000000000001
+#define _91수소 0.0000000000000000001
+#define _81수소 0.000000000000000001
+#define _71수소 0.00000000000000001
+#define _61수소 0.0000000000000001
+#define _51수소 0.000000000000001
+#define _41수소 0.00000000000001
+#define _31수소 0.0000000000001
+#define _21수소 0.000000000001
+#define _11수소 0.00000000001
+#define _01수소 0.0000000001
+#define _9수소 0.000000001
+#define _8수소 0.00000001
+#define _7수소 0.0000001
+#define _6수소 0.000001
+#define _5수소 0.00001
+#define _4수소 0.0001
+#define _3수소 0.001
+#define _2수소 0.01
+#define _1수소 0.1
+#define 영 0
+#define 공 0
+#define 일 1
+#define 나하 1
+#define 이 2
+#define 둘 2
+#define 삼 3
+#define 셋 3
+#define 사 4
+#define 넷 4
+#define 오 5
+#define 섯다 5
+#define 육 6
+#define 섯여 6
+#define 칠 7
+#define 곱일 7
+#define 팔 8
+#define 덟여 8
+#define 구 9
+#define 홉아 9
+#define 십 10
+#define 열 10
+#define 백 100
+#define 천 1000
+#define 만 10000
+#define 만일 10000
+#define 만십 100000
+#define 만백 1000000
+#define 만천 10000000
+#define 억 100000000
+#define 억일 100000000
+#define 억십 1000000000
+#define 억백 10000000000
+#define 억천 100000000000
+#define 조 1000000000000
+#define 조일 1000000000000
+#define 조십 10000000000000
+#define 조백 100000000000000
+#define 조천 1000000000000000
+#define 경 10000000000000000
+#define 경일 10000000000000000
+#define 경십 100000000000000000
+#define 경백 1000000000000000000
+#define 경천 10000000000000000000
+#define 해 100000000000000000000
+#define 해일 100000000000000000000
+#define 해십 1000000000000000000000
+#define 해백 10000000000000000000000
+#define 해천 100000000000000000000000
+#define 양 1000000000000000000000000
+#define 양일 1000000000000000000000000
+#define 양십 10000000000000000000000000
+#define 양백 100000000000000000000000000
+#define 양천 1000000000000000000000000000
+
+// 형료자
+typedef void 빈;
+typedef short 수정은짧;
+typedef unsigned short 수정은짧는없호부;
+typedef int 수정;
+typedef unsigned int 수정는없호부;
+typedef long long 수정긴긴;
+typedef unsigned long long 수정긴긴는없호부;
+typedef bool 불;
+typedef float 수실;
+typedef double 수실밀정;
+typedef char 자문;
+typedef unsigned char 자문는없호부;
+
+// 체조구
+typedef _iobuf 일파;
+
+// 련과 h.oinoc
+#include <conio.h>
+
+#define 림눌판자름누 _kbhit()
+#define 기얻판자린눌 _getch()
+
+// 련관 h.swodniW
+#include <Windows.h>
+
+// 업작 기리처전 게있 수 할출호 로글한 를수함
+#define 정설보정대막동이창력출 SetConsoleCursorInfo
+#define 정설표좌대막동이창력출 SetConsoleCursorPosition
+#define 수치퍼버면화창력출 SetConsoleScreenBufferSize
+#define 기얻자리관준표 GetStdHandle
+#define 정설자리관준표 SetStdHandle
+#define 기자잠 Sleep
+
+// ELDNAH_ RORRE TUPTUO TUPNI _DTS
+#define 자리관_력입_준표 STD_INPUT_HANDLE
+#define 자리관_력출_준표 STD_OUTPUT_HANDLE
+#define 자리관_제문_준표 STD_ERROR_HANDLE
+
+#define 점입진창 WinMain
+
+typedef LRESULT 과결수정긴;
+typedef LPWSTR 열자문드코니유터인포긴;
+typedef LPCWSTR 열자문드코니유터인포긴수상;
+
+#define 리처뒤 CALLBACK
+
+typedef HWND 자리관창;
+typedef WPARAM 수변개매터인포수정는없부호;
+typedef LPARAM 수변개매터인포긴;
+typedef MSG 지시메;
+
+#define 수변개매터인포긴ㅈㅅㅁ wParam
+
+typedef LPSTR 열자문터인포긴;
+typedef WNDCLASSEX ㅌㄷ스래클창;
+
+#define 일타스 style
+#define 름이표단식ㅍㄱ lpszMenuName
+#define 름이스래클ㅍㄱ lpszClassName
+#define 수함행진창ㅍㄱ lpfnWndProc
+#define 스턴스인ㅎ hInstance
+#define 콘이아은작ㅎ hIconSm
+#define 콘이아ㅎ hIcon
+#define 대막동이ㅎ hCursor
+#define 경배ㅂ hbrBackground
+#define 가추창ㅈ cbWndExtra
+#define 수치ㅈ cbSize
+#define 가추클ㅈ cbClsExtra
+
+#define 기리그지감이높_일타스창 CS_VREDRAW
+#define 기리그지감비너_일타스창 CS_HREDRAW
+#define 름누두_일타스창 CS_DBLCLKS
+#define 트스텍컨스이바디한유고_일타스창 CS_OWNDC
+#define 트스텍컨스이바디스래클_일타스창 CS_CLASSDC
+#define 트스텍컨스이바디모부_일타스창 CS_PARENTDC
+#define 함안용사기닫_일타스창 CS_NOCLOSE
+#define 장저트비_일타스창 CS_SAVEBITS
+#define 기추맞트언이라클트이바_일타스창 CS_BYTEALIGNCLIENT
+#define 기추맞창트이바_일타스창 CS_BYTEALIGNWINDOW
+#define 스래클역전_일타스창 CS_GLOBALCLASS
+
+#define 기오러불콘이아 LoadIcon
+#define 기오러불대막동이 LoadCursor
+
+#define 동구_콘이아별식 IDI_APPLICATION
+#define 표살화_대막동이별식 IDC_ARROW
+
+typedef HBRUSH 쉬러브ㅎ;
+
+#define 대막는미_색 COLOR_SCROLLBAR
+#define 경배_색 COLOR_BACKGROUND
+#define 제표성활_색 COLOR_ACTIVECAPTION
+#define 제표안성활_색 COLOR_INACTIVECAPTION
+#define 표단식_색 COLOR_MENU
+#define 창_색 COLOR_WINDOW
+#define 틀창_색 COLOR_WINDOWFRAME
+#define 글표단식_색 COLOR_MENUTEXT
+#define 글창_색 COLOR_WINDOWTEXT
+#define 글제표_색 COLOR_CAPTIONTEXT
+#define 리자장가성활_색 COLOR_ACTIVEBORDER
+#define 리자장가안성활_색 COLOR_INACTIVEBORDER
+#define 간공업작동구_색 COLOR_APPWORKSPACE
+#define 빛은높_색 COLOR_HIGHLIGHT
+#define 글빛은높_색 COLOR_HIGHLIGHTTEXT
+#define 면안튼버_색 COLOR_BTNFACE
+#define 자림그튼버_색 ㄴCOLOR_BTNSHADOW
+#define 글색회_색 COLOR_GRAYTEXT
+#define 글튼버_색 COLOR_BTNTEXT
+#define 글제표안성활_색 COLOR_INACTIVECAPTIONTEXT
+#define 빛은높튼버_색 COLOR_BTNHIGHLIGHT
+
+#define 용사로으본기_ㅈㅊ CW_USEDEFAULT
+
+#define 창진쳐겹_창 WS_OVERLAPPEDWINDOW
+
+#define 탕바_자리관창 HWND_DESKTOP
+
+typedef HINSTANCE 자리관스턴스인;
+
+#define 계설리처제문동구창 WINAPI
+
+#define 어령명_지시메창 WM_COMMAND
+#define 트인페_지시메창 WM_PAINT
+#define 거제_지시메창 WM_DESTROY
+#define 름누판자름누_지시메창 WM_KEYDOWN
+
+#define 쪽왼_판자름누값 VK_LEFT
+#define 쪽른오_판자름누값 VK_RIGHT
+
+#define 록등ㅌㄷ스래클 RegisterClassEx
+#define 기들만ㅌㄷ창 CreateWindowEx
+#define 기주여보창 ShowWindow
+#define 기하괴파창 DestroyWindow
+
+#define 기얻지시메 GetMessage
+#define 역번지시메 TranslateMessage
+#define 기내보지시메 DispatchMessage
+#define 기내보지시메기가나 PostQuitMessage
+
+#define 행진창본기 DefWindowProc
+
+#define 작시트인페 BeginPaint
+#define ㅌㄷ동이 MoveToEx
+#define 기리그선 LineTo
+#define 끝트인페 EndPaint
+
+#define 력출시다각사화효무 InvalidateRect
+
+#define 력출글 TextOut
+
+#define 로어단은낮 LOWORD
+
+typedef HDC 자리관트스텍컨스이바디;
+typedef PAINTSTRUCT 체조구트인페;
+
+typedef struct _CONSOLE_CURSOR_INFO 보정_대막동이_창력출;
+
+#define 수치ㅈㄱㅂ dwSize
+#define 임보ㅂ bVisible
+
+typedef struct _COORD 표좌;
+
+#define ㅌ X
+#define ㅍ Y
+
+// 련관 h.bildts
+#include <stdlib.h>
+
+#define 템스시 system
+#define 료종 exit
+#define 위작무 rand
+#define 정설드시위작무 srand
+
+// 련관 h.emit
+#include <time.h>
+
+#define 간시 time
+
+// 련관 h.elacol
+#include <locale.h>
+
+#define 정설소장 _wsetlocale
+
+#define 체전_소장 LC_ALL
+#define 조대_소장 LC_COLLATE
+#define 입타씨_소장 LC_CTYPE
+#define 화통_소장 LC_MONETARY
+#define 자숫_소장 LC_NUMERIC
+#define 간시_소장 LC_TIME
+
+#define 소최_소장 LC_ALL
+#define 대최_소장 LC_TIME
+
+#define 드코니유(ㅇ) L##ㅇ
+
+#include <math.h>
+
+#define 인사 sin
+#define 인사역 asin
+#define 인사코 cos
+#define 인사코역 acos
+#define 트젠탄 tan
+#define 트젠탄역 atan
+#define ㄷ트젠탄역 atan2f
+#define 근곱제 sqrt
+#define 곱제 pow
+#define 이파 3.1415926535897f
+#define 로으안디라을각 이파 / 180.0f
+
+#endif
