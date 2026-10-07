@@ -144,7 +144,7 @@
     <ClInclude Include="한글" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ㅎㄱ.cpp" />
+    <ClCompile Include="정올5053.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

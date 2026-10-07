@@ -62,6 +62,34 @@
 
 #define 다음줄 endl
 
+// 접속어
+#define 하지만
+#define 또한
+#define 그러므로
+#define 따라서
+#define 그럼에도
+#define 결국
+#define 한편
+
+// 조사
+#define 을
+#define 를
+#define 께서
+#define 에서
+#define 에
+
+// 문구
+#define 하고
+#define 하며
+#define 하면
+#define 이고
+#define 하므로
+#define 하다
+#define 이며
+#define 이면
+#define 이므로
+#define 이다
+
 // 구문과 키워드
 #define 만약 if
 #define 아니고만약 else if
@@ -124,6 +152,8 @@
 #define 비트왼쪽시프트 <<
 #define 비트오른쪽시프트 >>
 #define 대입 =
+#define 은 =
+#define 는 =
 #define 주소 &
 #define 포인터 *
 #define 증감 ++
@@ -138,6 +168,10 @@
 #define 양수 +
 #define 음수 -
 
+// 반복문 관련
+#define 부터 ;
+#define 까지 ;
+
 #define 물음표 ?
 #define 쌍점 :
 #define 두쌍점 ::
@@ -151,17 +185,33 @@
 
 // 괄호 종류
 #define 괄호열기 (
+#define 괄호열고 (
 #define 괄호닫기 )
+#define 괄호닫고 )
 #define 괄호열고닫기 ()
+#define 괄호여닫기 ()
+#define 괄호여닫고 ()
 #define 중괄호열기 {
+#define 중괄호열고 {
 #define 중괄호닫기 }
+#define 중괄호닫고 }
 #define 중괄호열고닫기 {}
+#define 중괄호여닫기 {}
+#define 중괄호여닫고 {}
 #define 대괄호열기 [
+#define 대괄호열고 [
 #define 대괄호닫기 ]
+#define 대괄호닫고 ]
 #define 대괄호열고닫기 []
+#define 대괄호여닫기 []
+#define 대괄호여닫고 []
 #define 홑화살괄호열기 <
+#define 홑화살괄호열고 <
 #define 홑화살괄호닫기 >
+#define 홑화살괄호닫고 >
 #define 홑화살괄호열고닫기 <>
+#define 홑화살괄호여닫기 <>
+#define 홑화살괄호여닫고 <>
 
 // 메인 함수
 #define 진입점 main
